@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* QUI INIZIA L'HEADER */
+
+.container {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.col-50 {
+    width: 50%;
+    padding: 30px;
+}
+
+.left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.bars {
+    font-size: 26px;
+    color: white;
+}
+
+/* STYLE CLASSES */
+.blue {
+    background-color: rgb(52, 133, 255);
+}
