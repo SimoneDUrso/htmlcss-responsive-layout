@@ -70,7 +70,8 @@
     margin-bottom: 20px;
     border-radius: 30px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .col-33 {
@@ -106,21 +107,33 @@
     padding: 50px 40px;
 }
 
+.container-six-blocks {
+    padding: 50px 40px;
+}
+
 .pt-50 {
     padding-top: 50px;
 }
 
 .row-inside-row {
     width: 100%;
+    background-color: white;
 }
 
 .text-center {
     text-align: center;
 }
 
+
 /* FOOTER */
 
-.col-50-footer {
+.col-50-footer-up {
+    width: 100%;
+    padding: 20px 30px;
+    height: 150px;
+}
+
+.col-50-footer-down {
     width: 80%;
     height: 150px;
 }
@@ -200,4 +213,108 @@
         margin: 0px;
     }
 
+    .row-inside-row .col-100 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-50-footer-up {
+        width: 100%;
+        padding: 20px 100px;
+        height: 150px;
+    }
+
+}
+
+@media screen and (min-width:1160px) {
+
+    .container-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .row-header {
+        width: 70%;
+    }
+
+    .container-demo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-demo .row {
+        width: 70%;
+    }
+
+    .container {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-100 {
+        width: 100%;
+    }
+
+    .row-inside-row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .row-inside-row .col-100 {
+        background-color: white;
+    }
+
+    .col-100 {
+        width: 50%;
+    }
+
+    .container .row {
+        width: 70%;
+    }
+
+    .col-66 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    .col-50.right {
+        justify-content: flex-end;
+    }
+
+    .col-33.bg-white {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% / 3 - 20px);
+    }
+
+    .container-70 {
+        width: 70%;
+    }
+
+    .container-six-blocks {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .col-50-footer-up {
+        width: 100%;
+        padding: 20px 300px;
+        height: 150px;
+    }
 }
