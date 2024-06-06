@@ -4,17 +4,6 @@
     box-sizing: border-box;
 }
 
-/* SECTION CLASSES */
-
-
-
-
-/* FINE SECTION CLASSES */
-
-
-
-
-
 
 /* LAYOUT CLASSES  */
 
@@ -66,7 +55,7 @@
 .row {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 
 .col-66 {
@@ -112,12 +101,27 @@
     padding: 50px 40px;
 }
 
+.pt-50 {
+    margin-top: 50px;
+}
+
+/* FOOTER */
+
+.col-50-footer {
+    width: 80%;
+    height: 200px;
+}
+
 /* FINE LAYOUT CLASSES */
 
 
 /* STYLE CLASSES */
 .bg-blue {
     background-color: rgb(52, 133, 255);
+}
+
+.violet {
+    color: violet;
 }
 
 .white {
@@ -138,4 +142,8 @@
 
 .bg-white {
     background-color: white;
+}
+
+.bg-black {
+    background-color: rgb(53, 53, 53);
 }
