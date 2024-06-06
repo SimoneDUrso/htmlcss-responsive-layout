@@ -4,13 +4,26 @@
     box-sizing: border-box;
 }
 
-/* QUI INIZIA L'HEADER */
+/* SECTION CLASSES */
 
-.container {
+
+
+
+/* FINE SECTION CLASSES */
+
+
+
+
+
+
+/* LAYOUT CLASSES  */
+
+/* QUI INIZIA L'HEADER */
+.container-full {
     width: 100%;
 }
 
-.row {
+.row-header {
     display: flex;
 }
 
@@ -33,10 +46,81 @@
 
 .bars {
     font-size: 26px;
-    color: white;
 }
+
+/* MAIN */
+.container-white {
+    height: 1000px;
+
+}
+
+.container {
+    padding: 50px 40px;
+}
+
+.container-demo {
+    margin: 30px;
+    padding-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.col-66 {
+    width: 100%;
+    height: 700px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.col-33 {
+    width: 100%;
+    height: 450px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.col-25 {
+    margin: 30px 0px;
+}
+
+.container.purple {
+    padding: 50px 40px;
+}
+
+/* FINE LAYOUT CLASSES */
+
 
 /* STYLE CLASSES */
 .blue {
     background-color: rgb(52, 133, 255);
+}
+
+.white {
+    color: white;
+}
+
+.purple {
+    background-color: #cf88ff;
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.bg-white {
+    background-color: white;
 }
