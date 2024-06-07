@@ -75,6 +75,7 @@
 
 .col-66-down img {
     width: 100%;
+    object-fit: cover;
 }
 
 .row {
@@ -102,13 +103,40 @@
 
 .col-33 {
     width: 100%;
-    height: 450px;
-    border: 1px solid black;
+    /* height: 450px;
+    border: 1px solid black; */
     margin-bottom: 20px;
     border-radius: 30px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px;
 }
+
+.fa-file-code,
+.fa-compass-drafting,
+.fa-laptop-code,
+.fa-bullhorn {
+    padding-bottom: 30px;
+    color: #3485ff;
+    font-size: 100px;
+}
+
+.col-33.bg-lightblue h3 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #3485ff;
+}
+
+.col-33.bg-lightblue p {
+    text-align: center;
+    line-height: 2em
+}
+
+/* .col-33.bg-lightblue {
+    display: flex;
+    flex-direction: column;
+} */
 
 .col-33-end {
     width: 100%;
@@ -119,10 +147,27 @@
 
 .col-30 {
     margin-top: 30px;
+    width: 70%;
+}
+
+.col-30 img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.col-30 .fa-quote-left {
+    font-size: 100px;
+    position: relative;
+    left: 72%;
+    top: 90px;
 }
 
 .col-100 {
     width: 100%;
+}
+
+.br-40 {
+    border-radius: 40px;
 }
 
 .col-25 {
@@ -131,6 +176,16 @@
 
 .container.purple {
     padding: 50px 40px;
+}
+
+.container.bg-purple p {
+    line-height: 2em;
+    font-size: 18px;
+}
+
+.container.bg-purple h2 {
+    font-size: 34px;
+    margin-bottom: 60px;
 }
 
 .container-six-blocks {
@@ -143,11 +198,90 @@
 
 .row-inside-row {
     width: 100%;
-    background-color: white;
+    padding: 30px;
+    margin: 60px 0px 20px 0px;
+}
+
+.row-inside-row p {
+    margin-bottom: 40px;
+}
+
+.row-inside-row img {
+    width: 100%;
+}
+
+.fa-arrow-down {
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.committed {
+    font-size: 38px;
+    margin: 30px;
+}
+
+.lh-2 {
+    line-height: 2em;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-38 {
+    font-size: 38px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.pd-30 {
+    padding: 30px;
 }
 
 .text-center {
     text-align: center;
+}
+
+.testimonial {
+    width: 250px;
+    height: 250px;
+    margin: 40px 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content.bg-purple.d-flex-row.br-40 {
+    padding-bottom: 40px;
+}
+
+.content.bg-purple.d-flex-row.br-40 p {
+    margin-bottom: 30px;
+}
+
+.col-33-6-col {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 50px 30px;
+}
+
+.mg-t-b {
+    margin: 30px 0px 30px 0px;
+}
+
+.content-button button {
+    border: none;
+    padding: 10px 60px 10px 60px;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, sans-serif;
+    margin-top: 30px;
 }
 
 
@@ -185,11 +319,11 @@
 }
 
 .purple {
-    color: #5000ff80;
+    color: rgb(149, 147, 230);
 }
 
 .bg-purple {
-    background-color: #5000ff80;
+    background-color: rgb(149, 147, 230);
 }
 
 .bg-lightblue {
@@ -204,6 +338,18 @@
     background-color: rgb(53, 53, 53);
 }
 
+.grey {
+    color: grey;
+}
+
+.bg-image {
+    background-image: url(../img/planning1.png);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-color: rgb(167, 127, 255);
+    margin-bottom: 100px;
+}
 
 /* MEDIA QUERY */
 
@@ -227,7 +373,6 @@
     .col-66 {
         width: calc(100% / 3 * 2 - 20px);
         margin: 10px;
-
     }
 
     .col-33 {
@@ -310,6 +455,11 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
+    }
+
+    .col-66-down {
+        display: flex;
+        align-items: flex-end;
     }
 
     .left {
